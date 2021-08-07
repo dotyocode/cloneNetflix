@@ -1,27 +1,29 @@
-# CloneNetFlix
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+# Clone Netflix
 
-## Development server
+Neste projeto, utilizei o framework o Angular 12 e usei alguns componentes do
+Angular Material para ajudar como o incone para fazer o slide.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Informações:
 
-## Code scaffolding
+    • API do projeto foi pega do site https://themoviedb.org/
+    • Todo o direito de imagens são da Netflix
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+# Instalação:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    • npm install
 
-## Running unit tests
+    • ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+    
+## Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![App Screenshot](https://lh3.googleusercontent.com/7bwEmEBeK5RtHEEBzudFTKLEU0soD9FvKO4jflyUleAq9OM65EqhUrebPvebteogWOylP1gwxhLCmE9Ge092=w2090-h1746-rw)
 
-## Further help
+![App Screenshot](https://lh5.googleusercontent.com/XR1l96b2nyoFW6X81ak0-afcasRIz6vPX2Cw4WDQH9zsCP6WvU0jiykJdoPGawmH9A92j_Bi4QTJXewUmU3z=w2090-h1746-rw)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![App Screenshot](https://lh3.googleusercontent.com/1CuwqTQ9HnU8YtrmvMilAcXnoH0Odu6Yxaf7n-GqoGnA9jd4rp_UO-ENmBVRdOIjk-GUMyb3TnjY0AGqkIbV=w2090-h1746-rw)
+
+![App Screenshot](https://lh3.googleusercontent.com/s2pv3XC7E3v8NmxxBm-6AOmJ3UBVkqLAS6HorcVNoqxO3lS-KzVSWSCComrTguPjtTOjCjkCMD-lm6m2-30Z=w2090-h1746-rw)
