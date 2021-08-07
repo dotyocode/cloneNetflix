@@ -1,0 +1,105 @@
+
+
+.movieRow{
+  margin-bottom: 30px;
+
+}
+
+.movieRow h2 {
+  margin: 0px 0px 0px 30px;
+}
+
+.listarea{
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+
+.list {
+transition: all ease 0.5s;
+}
+
+.item{
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+}
+
+.img{
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s
+}
+
+.img:hover{
+  transform: scale(1)
+}
+
+.setaDireita{
+  fill: white;
+  font-size: 30px;
+}
+
+.setaEsquerda{
+  fill: white;
+  font-size: 30px;
+}
+
+
+.iconEsquerda,
+.iconDireita{
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease 0.2s
+}
+
+.iconEsquerda{
+  left: 0;
+
+}
+
+.iconDireita{
+  right: 0;
+}
+
+.movieRow:hover .iconEsquerda{
+ opacity: 1;
+}
+
+.movieRow:hover .iconDireita{
+  opacity: 1;
+ }
+
+
+ .footer{
+   background-color: rgb(8, 8, 8);
+   height: 10%;
+ }
+
+
+ .prod{
+  font-weight: 200;
+  margin-top: -1%
+ }
+
+ .prod2{
+  font-weight: 200;
+   margin-top: 1%
+ }
+
+ .infosDiv{
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+ }
+

@@ -1,0 +1,84 @@
+.feature{
+  height: 75vh;
+  background: linear-gradient(to top, #111 10%, transparent 90%)
+}
+
+.imgFt{
+  width: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%)
+}
+
+.name{
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 8%;
+  padding-right: 55%;
+  padding-left: 30px;
+}
+
+.overview{
+  font-size: 18px;
+  color: #999;
+  max-width: 35%;
+  padding-left: 30px;
+  margin-top: -1%;
+}
+
+.data,
+.votos {
+  display: inline-block;
+  margin-right: 15px;
+  padding-left: 30px;
+}
+
+.data{
+  margin-top: -2%;
+}
+
+.votos {
+  color: rgb(0, 175, 67)
+}
+
+.itensText{
+  justify-content: center;
+  flex-direction: column;
+  display: flex
+}
+
+.assistirBtn,
+.trailerBtn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+
+.assistirBtn{
+  background-color: rgba(255, 0, 0, 0.849);
+  color: white;
+  border: none;
+  transition: all ease 0.2s
+}
+.assistirBtn:hover{
+  background-color: rgb(255, 30, 0);
+  color: white;
+}
+
+.trailerBtn{
+  background-color: rgb(250, 250, 250);
+  color: rgb(56, 56, 56);
+  transition: all ease 0.2s
+}
+
+.trailerBtn:hover{
+  background-color: rgb(185, 185, 185);
+  color: white;
+}
+
+.btns{
+  padding-left: 30px;
+}

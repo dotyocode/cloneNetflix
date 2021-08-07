@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+<div *ngIf="id" class="moviesTrailer">
+</div>
+
+<div  *ngIf="video" class="feature"  [style.background-size]="'cover'"  [style.background-repeat]="'no-repeat'" [style.background-image]="'linear-gradient(to bottom, #111 5%, transparent 50%) ,linear-gradient(to right, #111 1%, transparent 20%) ,linear-gradient(to top, #111 10%, transparent 90%), url(https://image.tmdb.org/t/p/original' +id.backdrop_path + ')'" >
+ <div >
+  <iframe class="filmeTrailer"  *ngIf="urlVideo" [style.width.px]="1280" height="720" frameborder="0"   [src]="Url" ></iframe>
+ </div>
+</div>
+
+<div class="tittleRating" *ngIf="id" >
+  <h1>Titulo: {{ id.original_title }}</h1>
+  <h3 class="votings">
+   Ranking Star:  {{id.vote_average}}
+    <mat-icon class="setaEsquerdas" style="color: rgb(255, 0, 0);">star</mat-icon>
+    <mat-icon class="setaEsquerdas" style="color: rgb(255, 0, 0);">star</mat-icon>
+    <mat-icon class="setaEsquerdas" style="color: rgb(255, 0, 0);">star</mat-icon>
+    <mat-icon class="setaEsquerdas" style="color: rgb(255, 0, 0);">star</mat-icon>
+    <mat-icon class="setaEsquerdas" style="color: rgb(255, 0, 0);">star</mat-icon>
+  </h3>
+</div>
+
+<div class="desc" >
+  <h3 class="description">Descrição</h3>
+  <p class="descriptionp">{{id.overview}}</p>
+</div>
+
+
+<div class="movieRow">
+  <h2>Filmes Similares</h2>
+
+  <div  (click)="moveEsquerdaRec()" class="iconEsquerda">
+    <mat-icon class="setaEsquerda" style="fill: white;">arrow_back_ios</mat-icon>
+  </div>
+
+  <div (click)="moveDireitaRec()" class="iconDireita">
+    <mat-icon class="setaDireita" style="fill: white;">arrow_forward_ios</mat-icon>
+  </div>
+
+  <div class='listarea'>
+    <div [style.margin-left.px]="scrollXRec" [style.width.px]="tamanho" class="list">
+      <div class="item" *ngFor="let s of similar">
+        <img  class="img" src="https://image.tmdb.org/t/p/w300{{s.poster_path}}"/>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+  <div class="infosDiv">
+    <p class="prod2">Site feito por: Jhonathan Peres</p>
+    <p class="prod">Todos os direito de imagens são da <b style="color: red">Netflix</b> <br> API: <b>TheMovieDb.org</b></p>
+  </div>
+</footer>
+
+
+
+

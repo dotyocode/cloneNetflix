@@ -1,0 +1,74 @@
+<app-header></app-header>
+<app-movie-feat></app-movie-feat>
+
+<div class="movieRow">
+
+  <h2>Melhores Filmes da Semana</h2>
+
+  <div  (click)="moveEsquerdaFilmes()" class="iconEsquerda">
+    <mat-icon class="setaEsquerda" style="fill: white;">arrow_back_ios</mat-icon>
+  </div>
+
+  <div (click)="moveDireitaFilmes()" class="iconDireita">
+    <mat-icon class="setaDireita" style="fill: white;">arrow_forward_ios</mat-icon>
+  </div>
+
+  <div class='listarea'>
+    <div  [style.margin-left.px]="scrollXFilmes" [style.width.px]="tamanho"  class="list">
+      <div  class="item" *ngFor="let m of movies">
+        <img routerLink="/assistir/{{m.id}}"  class="img" src="https://image.tmdb.org/t/p/w300{{m.poster_path}}"/>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="movieRow">
+  <h2>Recomendados para Você</h2>
+
+  <div  (click)="moveEsquerdaRec()" class="iconEsquerda">
+    <mat-icon class="setaEsquerda" style="fill: white;">arrow_back_ios</mat-icon>
+  </div>
+
+  <div (click)="moveDireitaRec()" class="iconDireita">
+    <mat-icon class="setaDireita" style="fill: white;">arrow_forward_ios</mat-icon>
+  </div>
+
+  <div class='listarea'>
+    <div [style.margin-left.px]="scrollXRec" [style.width.px]="tamanho" class="list">
+      <div class="item" *ngFor="let d of destaques">
+        <img routerLink="/assistir/{{d.id}}" class="img" src="https://image.tmdb.org/t/p/w300{{d.poster_path}}"/>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="movieRow">
+  <h2>Em Alta</h2>
+
+  <div  (click)="moveEsquerdaAlt()" class="iconEsquerda">
+    <mat-icon class="setaEsquerda" style="fill: white;">arrow_back_ios</mat-icon>
+  </div>
+
+  <div (click)="moveDireitaAlt()" class="iconDireita">
+    <mat-icon class="setaDireita" style="fill: white;">arrow_forward_ios</mat-icon>
+  </div>
+
+  <div class='listarea'>
+    <div [style.margin-left.px]="scrollX" [style.width.px]="tamanho" class="list">
+      <div class="item" *ngFor="let a of alta">
+        <img routerLink="/assistir/{{a.id}}" class="img" src="https://image.tmdb.org/t/p/w300{{a.poster_path}}"/>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="infosDiv">
+    <p class="prod2">Site feito por: Jhonathan Peres</p>
+    <p class="prod">Todos os direito de imagens são da <b style="color: red">Netflix</b> <br> API: <b>TheMovieDb.org</b></p>
+  </div>
+</footer>

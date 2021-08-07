@@ -1,0 +1,12 @@
+
+<div class="feature" *ngIf="movies"  [style.background-size]="'cover'"  [style.background-repeat]="'no-repeat'" [style.background-image]="'linear-gradient(to right, #111 30%, transparent 70%) ,linear-gradient(to top, #111 10%, transparent 90%), url(https://image.tmdb.org/t/p/original' + movies[10].backdrop_path + ')'">
+  <div class="itensText">
+    <h1 class="name">{{movies[10].original_title}}</h1>
+    <h3 class="data">{{movies[10].release_date}} <h3 class="votos">{{movies[10].vote_average}}</h3></h3>
+    <p class="overview">{{movies[10].overview}}</p>
+  </div>
+  <div class="btns">
+    <button *ngIf="movies" routerLink="/assistir/{{movies.id}}" class="assistirBtn">Assistir Trailer</button>
+    <!-- <button class="trailerBtn">Ver Trailer</button> -->
+  </div>
+</div>
